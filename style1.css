@@ -1,0 +1,70 @@
+@media (min-width : 768px) {
+    .news-input {
+        width: 50%;
+    }
+    
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#my-image{ 
+	background-image: url("pitch1.jpg"); 
+	background-size: cover; 
+	height:100%; 
+	width: 100%; 
+} 
+
+#my-image-div{ 
+	background-image: url("img/cover\ photodhfhdfh.jpg"); 
+	background-size: cover; 
+	height:100%; 
+	width: 100%; 
+} 
+#my-image-text{ 
+	position :relative; 
+	top: 500px; 
+	width: 500px; 
+} 
+
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex-basis: 50%;
+    /* padding: 5px; */
+    box-sizing: border-box;
+}
+
+.child img {
+	width: 100%;
+}
+.section{
+	border: 2px solid black;
+	margin: 50px;
+	padding: 4px;
+}
+.works{
+	font-size: 16px;
+}
+a{
+	color: white;
+}
+.social-media{
+	display: flex;
+	justify-content: center;
+	
+}
+.instagram{
+	padding: 12px;
+}
+.facebook{
+	padding: 12px;
+}

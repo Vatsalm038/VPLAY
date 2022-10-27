@@ -9,6 +9,7 @@ import Settings from "./Settings";
 import Leagues from "./Leagues";
 import Pickup from "./Pickup";
 import SingleSport from "./SingleSport";
+import SingleLeague from "./SingleLeague";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +19,9 @@ root.render(
       <Route path="/settings" element={<Settings />} />
       <Route path="/Leagues" element={<Leagues />} />
       <Route path="/Pickup" element={<Pickup />} />
-      <Route path="/go/:name" element={<SingleSport />} />
+      <Route path="/go/:name/:ename" element={<SingleSport />} />
+      /SingleLeague
+      <Route path="/SingleLeague/:name" element={<SingleLeague />} />
     </Routes>
   </BrowserRouter>
 );

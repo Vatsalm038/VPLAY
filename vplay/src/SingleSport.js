@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Routes, useParams } from "react-router-dom";
 import { db } from "./firebase";
 
 import Header from "./Header";
@@ -71,7 +71,7 @@ const SingleSport = () => {
               />
               <div className="card-body">
                 <h5 className="card-title">
-                  <b>MGPL SEASON 2</b>
+                  <b>{params.ename}</b>
                 </h5>
                 <p className="card-text">
                   6 V 6 - Football League at Sports Co

@@ -32,7 +32,7 @@ const Pickup = () => {
                   6 V 6 - Football League at Sports Co
                 </p>
                 <div id="last">
-                  <a href="/go/fl" className="btn btn-primary">
+                  <a href="/go/fl/MGPL SEASON 2" className="btn btn-primary">
                     Go somewhere
                   </a>
                 </div>
@@ -51,7 +51,10 @@ const Pickup = () => {
                   Outdoor astrol
                 </p>
                 <div id="last">
-                  <a href="/go/wc" className="btn btn-primary">
+                  <a
+                    href="/go/wc/WORLD CUP TOURNAMENT"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>
@@ -71,7 +74,10 @@ const Pickup = () => {
                   <br />6 V 6 - Football League
                 </p>
                 <div id="last">
-                  <a href="/go/tsec" className="btn btn-primary">
+                  <a
+                    href="/go/tsec/Thadomal Shahani Engineering College Presents Howzatt"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>
@@ -91,7 +97,10 @@ const Pickup = () => {
                   <br />7 V 7 - One Day Football Tournament
                 </p>
                 <div id="last">
-                  <a href="/go/wl" className="btn btn-primary">
+                  <a
+                    href="/go/wl/RC CLASH OF TITANS"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>

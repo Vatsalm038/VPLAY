@@ -32,7 +32,10 @@ const Leagues = () => {
                   6 V 6 - Football League at Sports Co
                 </p>
                 <div id="last">
-                  <a href="#/" className="btn btn-primary">
+                  <a
+                    href="/SingleLeague/MGPL SEASON 2"
+                    className="btn btn-primary"
+                  >
                     Click Here
                   </a>
                 </div>
@@ -51,7 +54,10 @@ const Leagues = () => {
                   Outdoor astrol
                 </p>
                 <div id="last">
-                  <a href="#/" className="btn btn-primary">
+                  <a
+                    href="/SingleLeague/WORLD CUP TOURNAMENT"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>
@@ -71,7 +77,10 @@ const Leagues = () => {
                   <br />6 V 6 - Football League
                 </p>
                 <div id="last">
-                  <a href="#/" className="btn btn-primary">
+                  <a
+                    href="/SingleLeague/HOWZATT' 22"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>
@@ -91,7 +100,10 @@ const Leagues = () => {
                   <br />7 V 7 - One Day Football Tournament
                 </p>
                 <div id="last">
-                  <a href="#/" className="btn btn-primary">
+                  <a
+                    href="/SingleLeague/RC CLASH OF TITANS"
+                    className="btn btn-primary"
+                  >
                     Go somewhere
                   </a>
                 </div>

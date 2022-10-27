@@ -44,3 +44,23 @@ img {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.social {
+  float: right;
+}
+
+.copy {
+  position: relative;
+  bottom: 120px;
+  left: 600px;
+}
+
+#hero h1 {
+  margin-top: 50px;
+
+}
+
+#hero .subtitle  {
+  margin-bottom: 400px;
+    /* position: relative; */
+   /* top: -100px; */
+} 

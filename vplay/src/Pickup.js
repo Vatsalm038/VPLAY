@@ -33,7 +33,7 @@ const Pickup = () => {
                 </p>
                 <div id="last">
                   <a href="/go/fl/MGPL SEASON 2" className="btn btn-primary">
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Pickup = () => {
                     href="/go/wc/WORLD CUP TOURNAMENT"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Pickup = () => {
                     href="/go/tsec/Thadomal Shahani Engineering College Presents Howzatt"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Pickup = () => {
                     href="/go/wl/RC CLASH OF TITANS"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>

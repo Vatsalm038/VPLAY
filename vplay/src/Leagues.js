@@ -58,7 +58,7 @@ const Leagues = () => {
                     href="/SingleLeague/WORLD CUP TOURNAMENT"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Leagues = () => {
                     href="/SingleLeague/HOWZATT' 22"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const Leagues = () => {
                     href="/SingleLeague/RC CLASH OF TITANS"
                     className="btn btn-primary"
                   >
-                    Go somewhere
+                   Click Here
                   </a>
                 </div>
               </div>

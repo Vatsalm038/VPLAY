@@ -55,21 +55,21 @@ const SingleLeague = () => {
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>IT Smashers</td>
+                  <td>AIDS Rocks</td>
+                  <td>20th October: 9.30</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>ViralCharacters</td>
+                  <td>Norton Destructors</td>
+                  <td>21st October: 9.30</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>Cool Matterw</td>
+                  <td>Whiterose</td>
+                  <td>22nd OCtober: 9.30</td>
                 </tr>
               </tbody>
             </table>
@@ -87,21 +87,21 @@ const SingleLeague = () => {
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>India</td>
-                  <td>China</td>
+                  <td>IT Smashers</td>
+                  <td>AIDS Rocks</td>
                   <td>3-0</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>ViralCharacters</td>
+                  <td>Norton Destructors</td>
+                  <td>3-2</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>Cool Matterw</td>
+                  <td>Whiterose</td>
+                  <td>4-3</td>
                 </tr>
               </tbody>
             </table>

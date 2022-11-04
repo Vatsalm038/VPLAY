@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Settings from "./Settings";
 import Leagues from "./Leagues";
 import Pickup from "./Pickup";
+import Login from "./Login";
 import SingleSport from "./SingleSport";
 import SingleLeague from "./SingleLeague";
 
@@ -19,6 +20,7 @@ root.render(
       <Route path="/settings" element={<Settings />} />
       <Route path="/Leagues" element={<Leagues />} />
       <Route path="/Pickup" element={<Pickup />} />
+      <Route path="/Login" element={<Login/>}/>
       <Route path="/go/:name/:ename" element={<SingleSport />} />
       /SingleLeague
       <Route path="/SingleLeague/:name" element={<SingleLeague />} />

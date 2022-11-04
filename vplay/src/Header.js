@@ -27,6 +27,9 @@ const Header = () => {
           <li>
             <a href="settings">SETTINGS</a>
           </li>
+          <li>
+            <a href="Login">Login</a>
+          </li>
           {/* <li><a href="settings.html"><i class="fa-duotone fa-gear"></i></a></li> */}
         </ul>
       </div>

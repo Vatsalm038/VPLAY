@@ -7,6 +7,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { UserContext } from "./context/userContext";
+import "./abc.css";
 
 const SignUp = () => {
   const { user, setUser } = useContext(UserContext);
@@ -43,15 +44,18 @@ const SignUp = () => {
       <Header />
       <div>
         <form>
-          <div>Sign Up</div>
+        <div className="box">
+          <div><h1>Sign Up</h1></div>
           {samasya && <p>{samasya}</p>}
-          <label htmlFor="name">Name:</label>
+          
+          <label htmlFor="name"><h4>Name:</h4></label>
           <input type="text" name="name" ref={nameRef}></input>
-          <label htmlFor="email">Email:</label>
+          
+          <label htmlFor="email"><h4>Email:</h4></label>
           <input type="text" name="email" ref={emailRef}></input>
-          <label htmlFor="password">Create password:</label>
+          <label htmlFor="password"><h4>Enter Password:</h4></label>
           <input type="password" name="pass" ref={passwordRef}></input>
-          <label htmlFor="confirmpass">Confirm password:</label>
+          <label htmlFor="confirmpass"><h4>Confirm password:</h4></label>
           <input
             type="password"
             name="confirmpass"
@@ -85,11 +89,13 @@ const SignUp = () => {
           >
             Submit
           </button>
+          
           <div>
             Already have an account?
             <Link to="/login">
               <span>Login</span>
             </Link>
+            </div>
             .
           </div>
         </form>

@@ -4,6 +4,7 @@ import { Navigate } from "react-router";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { UserContext } from "./context/userContext";
 import Header from "./Header";
+import "./abc.css";
 
 const Login = () => {
   const { user, setUser } = useContext(UserContext);
@@ -34,11 +35,12 @@ const Login = () => {
       <Header />
       <div>
         <form>
-          <div>Login</div>
+          <div className="box">
+          <div><h1>Login</h1></div>
           {samasya && <p>{samasya}</p>}
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email"><h4>Email:</h4></label>
           <input type="text" name="email" ref={emailRef}></input>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password"><h4>Password:</h4></label>
           <input type="password" name="pass" ref={passwordRef}></input>
           <button
             onClick={(e) =>
@@ -57,7 +59,8 @@ const Login = () => {
             <Link to="/signup">
               <span>Signup</span>
             </Link>
-            .
+            </div>
+            
           </div>
         </form>
       </div>

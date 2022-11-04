@@ -37,4 +37,55 @@
   }
 }
 
+.show{
+  position: relative;
+  left: 210px;
+  height: 2em;
+  width: 2em;
+}
 
+
+
+.works {
+  max-width: 600px 480px,800px
+
+}
+
+@media (max-width:1207px) {
+  #header {
+    padding: 10px 30px;
+  }
+
+  #meet_pals {
+    padding: 0 20px;
+    background-position: 0%;
+    height: 1px;
+    width: 1px;
+  }
+  
+}
+
+#page-header1 {
+
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+
+}
+
+.l1{
+  color: aliceblue;
+  position: relative;
+  left: 5px;
+
+}
+
+.l2{
+  color: aliceblue;
+  
+}

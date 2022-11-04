@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Header from "./Header";
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
                   width={16}
                   height={16}
                   fill="currentColor"
-                  className="bi bi-search"
+                  className="bi bi-search show"
                   viewBox="0 0 16 16"
                 >
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -45,7 +46,7 @@ function App() {
                   width={16}
                   height={16}
                   fill="currentColor"
-                  className="bi bi-calendar3"
+                  className="bi bi-calendar3 show"
                   viewBox="0 0 16 16"
                 >
                   <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
@@ -66,7 +67,7 @@ function App() {
                   width={16}
                   height={16}
                   fill="currentColor"
-                  className="bi bi-skip-start-circle-fill"
+                  className="bi bi-skip-start-circle-fill show"
                   viewBox="0 0 16 16"
                 >
                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM9.71 5.093 7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.79-.407z" />
@@ -98,7 +99,7 @@ function App() {
                   <p>Teams will be changed if its uneven</p>
                 </li>
               </ul>
-              <img src="assets/meet-pals.png" alt="" />
+              <img classname="works" id="meet_pals" src="assets/meet-pals.png" alt="" />
             </div>
             <hr />
           </section>
@@ -139,10 +140,10 @@ function App() {
                         <div className="col-md-4">
                           <h3>Quick Links</h3>
                           <ul>
-                          <li><a href="pickup.html">PICK UP</a></li>
-                          <li><a href="league.html">LEAGUES</a></li>
+                          <li><a href="Pickup">PICK UP</a></li>
+                          <li><a href="Leagues">LEAGUES</a></li>
                           
-                          <li><a href="settings.html">SETTINGS</a></li>
+                          <li><a href="Settings">SETTINGS</a></li>
                           </ul>
                         </div>
                         <div className=" social col-md-3">
@@ -192,6 +193,7 @@ function App() {
               
           </footer>
         </section>
+      
       </div>
     </>
   );

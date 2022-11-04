@@ -9,6 +9,7 @@ import {
 import { UserContext } from "./context/userContext";
 import "./abc.css";
 
+
 const SignUp = () => {
   const { user, setUser } = useContext(UserContext);
   const nameRef = useRef("");
@@ -40,28 +41,30 @@ const SignUp = () => {
     return <Navigate to="/" />;
   }
   return (
-    <div>
+    <div className="main_box">
       <Header />
-      <div>
-        <form>
-        <div className="box">
-          <div><h1>Sign Up</h1></div>
+      <div className="Auth-form-container" >
+        <form className="Auth-form">
+        <div className="box Auth-form-content">
+          <div><h1 className="Auth-form-title">Sign Up</h1></div>
           {samasya && <p>{samasya}</p>}
           
-          <label htmlFor="name"><h4>Name:</h4></label>
+          <label htmlFor="name" className="label1"><h4>Name:</h4></label>
           <input type="text" name="name" ref={nameRef}></input>
           
-          <label htmlFor="email"><h4>Email:</h4></label>
+          <label htmlFor="email" className="label1"><h4>Email:</h4></label>
           <input type="text" name="email" ref={emailRef}></input>
-          <label htmlFor="password"><h4>Enter Password:</h4></label>
+
+          <label htmlFor="password" className="label1"><h4>Enter Password:</h4></label>
           <input type="password" name="pass" ref={passwordRef}></input>
-          <label htmlFor="confirmpass"><h4>Confirm password:</h4></label>
+
+          <label htmlFor="confirmpass" className="label1"><h4>Confirm password:</h4></label>
           <input
             type="password"
             name="confirmpass"
             ref={confirmPasswordRef}
           ></input>
-          <button
+          <button className="submit"
             type="submit"
             onClick={(e) => {
               if (
@@ -90,7 +93,7 @@ const SignUp = () => {
             Submit
           </button>
           
-          <div>
+          <div className="acc">
             Already have an account?
             <Link to="/login">
               <span>Login</span>

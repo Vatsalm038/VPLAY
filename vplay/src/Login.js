@@ -31,18 +31,18 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="main_box">
       <Header />
-      <div>
-        <form>
-          <div className="box">
-          <div><h1>Login</h1></div>
+      <div className="Auth-form-container">
+        <form className="Auth-form">
+          <div className="box Auth-form-content">
+          <div><h1 className="Auth-form-title">Login</h1></div>
           {samasya && <p>{samasya}</p>}
           <label htmlFor="email"><h4>Email:</h4></label>
           <input type="text" name="email" ref={emailRef}></input>
           <label htmlFor="password"><h4>Password:</h4></label>
           <input type="password" name="pass" ref={passwordRef}></input>
-          <button
+          <button className="submit"
             onClick={(e) =>
               handleLogin(
                 e,
@@ -54,7 +54,7 @@ const Login = () => {
           >
             Submit
           </button>
-          <div>
+          <div className="acc">
             Need an account?
             <Link to="/signup">
               <span>Signup</span>

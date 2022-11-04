@@ -4,26 +4,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Settings from "./Settings";
-import Leagues from "./Leagues";
-import Pickup from "./Pickup";
-import SingleSport from "./SingleSport";
-import SingleLeague from "./SingleLeague";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/Leagues" element={<Leagues />} />
-      <Route path="/Pickup" element={<Pickup />} />
-      <Route path="/go/:name/:ename" element={<SingleSport />} />
-      /SingleLeague
-      <Route path="/SingleLeague/:name" element={<SingleLeague />} />
-    </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

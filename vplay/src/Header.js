@@ -1,9 +1,30 @@
 import React from "react";
+import {Link } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
+import { useState, useContext } from "react";
+import { UserContext } from "./context/userContext";
 
 const Header = () => {
+   const { user, setUser } = useContext(UserContext);
+
+   const auth = getAuth();
+
+   const handleSignout = (e, auth) => {
+     e.preventDefault();
+
+     signOut(auth)
+       .then(() => {
+         console.log("Sign-out successful.");
+         localStorage.removeItem("user");
+         setUser(null);
+       })
+       .catch((error) => {
+         console.error("An error happened while signing out: ", error);
+       });
+   };
   return (
     <section id="header">
-      <a href="/">
+      <Link to="/">
         {" "}
         <img
           src="/assets/logo.png"
@@ -12,21 +33,38 @@ const Header = () => {
           width="100px"
           height="50px"
         />
-      </a>
+      </Link>
       <div>
         <ul id="navbar">
           <li>
-            <a href="Pickup">PICK UP</a>
+            <Link to="/Pickup">PICK UP</Link>
           </li>
           <li>
-            <a href="Leagues">LEAGUES</a>
+            <Link to="/Leagues">LEAGUES</Link>
           </li>
           {/* <li>
             <a href="profile">PROFILE</a>
           </li> */}
           <li>
-            <a href="settings">SETTINGS</a>
+            <Link to="/settings">SETTINGS</Link>
           </li>
+          <li>
+            {user ? <p>{user.displayName}</p> : <Link to="/signup">SIGNUP</Link>}
+          </li>
+          <li>
+            {user ? (
+              <button
+                onClick={(e) => {
+                  handleSignout(e, auth);
+                }}
+              >
+                <Link to="/">Sign out</Link>
+              </button>
+            ) : (
+             ""
+            )}
+          </li>
+
           {/* <li><a href="settings.html"><i class="fa-duotone fa-gear"></i></a></li> */}
         </ul>
       </div>
